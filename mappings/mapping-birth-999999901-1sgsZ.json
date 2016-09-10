@@ -1,0 +1,24 @@
+{
+  "uuid" : "dfaf94c5-379f-385f-a1e5-6f14171a4b2f",
+  "request" : {
+    "url" : "/api/v0/events/birth/999999901",
+    "method" : "GET",
+    "headers" : {
+      "x-auth-downstream-username" : {
+        "equalTo" : "lev-web-user"
+      },
+      "X-Auth-Username" : {
+        "equalTo" : "lev-api-user"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-birth-999999901-1sgsZ.json",
+    "headers" : {
+      "Server" : "spray-can/1.3.3",
+      "Date" : "Sat, 10 Sep 2016 19:42:48 GMT",
+      "Content-Type" : "application/json; charset=UTF-8"
+    }
+  }
+}
