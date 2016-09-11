@@ -11,9 +11,7 @@ unset WM_PID
 FE_DIR="lev-web"
 FE_REPO="https://github.com/UKHomeOffice/lev-web.git"
 
-if [ ! -e "./wiremock-standalone-2.1.11.jar" ] ; then
-    curl -O https://repo1.maven.org/maven2/com/github/tomakehurst/wiremock-standalone/2.1.11/wiremock-standalone-2.1.11.jar
-fi
+./check-jar.sh
 
 [ -z "${TARGET}" ] && TARGET="https://lev-api-dev.notprod.homeoffice.gov.uk"
 [ -z "${PORT}" ] && PORT="8080"
